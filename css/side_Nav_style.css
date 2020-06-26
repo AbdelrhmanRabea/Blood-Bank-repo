@@ -1,0 +1,260 @@
+
+.fixedNav 
+{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    z-index: 99999999999;
+}
+.donate , .needDonate  , .tour 
+{
+    height: 50px;
+    width: 50px;
+    background-color: white ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.donate  .needDonate { border-bottom: 0px solid lightgray;  }
+
+.fixedhover {  cursor: pointer; }
+.sstyle
+{
+    width: 120px;
+    height: 50px;
+    background-color: #D02323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-120px);
+    transition: all .2s;
+}
+.fixedhover:hover .sstyle{
+
+    transform: translateX(0);
+}
+.fixedhover:hover .tot{
+
+    color: white;
+    background-color: #D02323;
+}
+/* -- popup window */ 
+
+.overlay
+{
+    background-color: rgba( 0, 0, 0 , .8);
+    height: 100%;
+    width: 100%;
+}
+
+#donation
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 99999999999;
+}
+.formBody
+{
+    background-color: white;
+    width: 60%;
+    height: 85vh;
+    box-shadow: 0 0 0 40px; 
+    position: relative;
+}
+
+#close , #nclose 
+{
+    cursor: pointer; 
+    position: absolute;
+    top: 2%;
+    right: -10%;
+    font-size: 25px;
+}
+#close:hover , #nclose:hover  {  color: #D02323;  }
+
+.transitionForm
+{
+    background-color: #F5F5F5 ;
+    height: 19%;
+}
+.backWidth
+{
+    width: 95%;
+    margin: auto;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    color: rgba( 0, 0, 0 , .7);
+}
+.backFont
+{
+    font-size: 25px;
+}
+.transitionForm .paddingCnceling span 
+{
+    background-color: transparent ;
+    font-weight: bold;
+}
+.backWidth:hover
+{
+    color: #D02323;
+    box-shadow: 0 0 0 9px #e6e6e6;
+}
+
+.backWidth:hover span 
+{
+    color: #D02323 ;
+}
+.paddingCnceling
+{
+    padding: 0 !important;
+}
+
+/*    ------------------------------   */
+.formBody .formContent .row input
+{
+    width: 95%;
+    height: 45px;
+    border: none;
+    border-color: #F5F5F5 ;
+    background-color: #F5F5F5;
+}
+.formBody .formContent .row select
+{
+    width: 95%;
+    height: 45px;
+    border: none;
+    background-color: #F5F5F5;
+    color: #1f2633;
+    outline: none;
+    cursor: pointer;
+}
+
+.formBody .formContent .row label 
+{
+    color: #1f2633;
+    text-align: right;
+    font-weight: bold;
+    width: 100%;
+}
+.formContent
+{
+    width: 80%;
+    margin: 50px auto;
+    margin-bottom: 1px;
+}
+#perInfo-m , #nperInfo-m  { display: block; }
+#bloInfo-m  ,  #getIn-m , #nbloInfo-m  ,  #ngetIn-m 
+{
+    display: none;
+}
+#getIn-m textarea , #ngetIn-m textarea 
+
+{
+    width: 95%;
+    height: 150px;
+    border: none;
+    border-color: #F5F5F5 ;
+    background-color: #F5F5F5;
+    
+}
+/* --------  */ 
+.currentbackwidth
+{
+    background-color :white ;
+    color : #D02323;
+}
+.currentspan
+{
+    color : #D02323;    
+}
+
+/*  buttons    */ 
+
+
+
+/* ------------------ need donation */
+
+#needDonation 
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    display: none;
+    
+}
+
+
+/*        -          -   */
+
+#resultsNeedDonation , #resultsDonation
+{
+    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    z-index: 99999999999999999999999999999;
+}
+
+.header div 
+{
+    margin: 20px auto;
+    width: 35%;
+    height: 50px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    color: rgba( 0, 0, 0 , .7);
+    
+}
+.header div i { font-size: 25px; }
+.header div span 
+{ 
+    font-weight: bold; 
+}
+.resultInfo .fullPage p
+{
+    height: 45px;
+    border: none;
+    border-color: #F5F5F5 ;
+    background-color: #F5F5F5;
+    font-weight: bold;
+}
+.saveButton
+{
+    margin: 10px auto;
+}
+.saveButton button
+{
+    background-color: #D02323 ; color: white; width: 90px;
+}
+.saveButton button:hover {   box-shadow: 0 0 0 10px rgba(208,35,35, .6);   }
+
+.formResult
+{
+    background-color: white;
+    width: 60%;
+    height: 85vh;
+    box-shadow: 0 0 0 40px; 
+    position: relative;
+}
+
+
+
+/* Buttuns */
+
+button#nextButton , #fillMessageButton , #finalSubmit , #submit{
+    width: 25%;
+    margin-left: auto !important;
+    margin-top: 2rem !important;
+}

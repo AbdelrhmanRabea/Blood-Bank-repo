@@ -1,3 +1,8 @@
+
+a{
+    text-decoration: none !important;
+}
+
 /* Heading */
 .aboutCaption h2::before{
     content: "A";
