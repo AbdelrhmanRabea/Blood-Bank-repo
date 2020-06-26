@@ -1,0 +1,553 @@
+
+
+
+
+
+body{
+    /*background-color: greenyellow;*/
+  /*  font-family: 'Raleway', sans-serif;*/
+}
+/* Menu */
+
+
+.bg-transparent-custom{
+       
+        padding: 0rem 4.3rem;
+        position: absolute;
+        width: 100%;
+        border-top: 1px solid #c0c0c026;
+       
+}
+#navbarNav .navbar-nav .nav-item .nav-link{
+    color: #fff;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.mainMenu {
+    position: fixed;
+    width: 100%;
+    top: 40;
+    z-index: 99999;
+    padding: 0rem 7.2rem;
+}
+
+
+
+/****** Header *********/
+
+.sectionslider1{
+    background-image: url("../images/blooddonate-800.jpg");
+}
+.sectionslider2{
+    background-image: url("../images/blood-donation.jpg");
+}
+.sectionslider3{
+    background-image: url("../images/handblood.jpg");
+}
+
+.sliderSection{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+   /* padding: 5rem;*/
+   
+}
+.bg-slider3{
+    background-image: url("../images/handblood.jpg");
+}
+
+
+.headerSection{
+    height: 80vh;
+    width: 100%;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.overlayHeader{
+    background: linear-gradient(145deg, #000000, transparent);
+    height: 100%;
+    padding: 5rem;
+}
+
+.headerSection .switcher{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    top: 90%;
+}
+.headerSection .switcher .dots{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.5);
+    display: inline-block;
+    margin: 0rem 0.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.headerSection .switcher .dots:hover{
+    background-color: #fff;
+}
+.whiteBG{
+    background-color: #fff !important;
+}
+.content{
+    color:#fff;
+    padding : 5rem 1rem !important;
+   
+}
+.content h1{
+    font-size: 60px;
+}
+.content-header {
+    font-size: 22px;
+}
+.butns {
+    margin-left: 1.8rem;
+}
+
+
+
+
+
+
+
+
+/*Hospitals Page*/
+#hospitals{
+    background-image:url(../images/adult-child-hands-holding-red-heart-aqua-background_49149-908.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+    width:100% !important;
+    height:100% !important;
+
+}
+.overlay{
+    background-color:#D0CCD0;
+    opacity:0.5;
+    width:100% !important;
+    height:100% !important;
+}
+.tag{
+    padding-top: 20%;
+    background-color: #000000;
+}
+.tag h2{
+    color:#FFFFFF;
+    font-weight:40rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size:2rem;  
+    cursor: pointer; 
+    padding: 1rem; 
+    border: #D0CCD0 2px solid;
+    border-radius:20%;
+    -webkit-border-radius:20%;
+    -moz-border-radius:20%;
+    -ms-border-radius:20%;
+    -o-border-radius:20%;
+    font-family: 'Sriracha', cursive;
+}
+.tag h2:hover{
+    border: #D0CCD0 2px solid;
+    background-color: red;
+    color: #FBFCFF;
+}
+.divhospitalDetail{
+    display:none;
+}
+#div1 {
+    display: block;
+}
+.hospitalData{
+    border: 2px solid #000000;
+    margin: auto;
+    margin-top: 2%;
+}
+#targetedDiv{
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+.divhospitalDetail{
+    background-color:  #D02323;
+    margin-top: 7%;
+    maring-bottom:2%;
+    font-size: 1.5rem;
+    padding: 2%;
+    padding-top: 5%;
+}
+.divhospitalDetail span{
+    background-color: #000000;
+    text-shadow: 2px 2px #ff0000;
+    font-size: 2.5rem;
+    font-weight: 1000;
+    padding: 1.1rem;
+    margin: auto;
+    text-align: center;
+    display: block;
+    color: #FBFCFF;
+}
+.divhospitalDetail p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 1.1rem;
+}
+
+/*Chat box*/
+#chatbox{
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+    height:16rem;
+    width: 17%;
+}
+#chatbox i{
+     margin-right: auto;
+}
+#chatbox .header{
+    height:15%;  
+    background-color: black !important;
+    font-weight: 800;
+  /*  border:2px #D0CCD0 solid;*/
+}
+#chatbox .chatHistory{
+    height: 80%;
+    border:2px rgb(18, 1, 26) solid;
+    overflow-y: auto;
+    word-wrap: break-word;
+    background-color: #FFFFFF !important;    
+}
+
+#chatbox .chatHistory ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+#chatbox .sendIcon{
+    background-color: transparent;
+    color: blue;  
+    font-size: 1.5rem;
+    position: relative;
+    right: 6% !important;
+    margin-left:1.2rem !important ;
+}
+.chatMessage #textarea{
+    height:3rem;
+    border:2px rgb(18, 1, 26) solid;
+    border-radius: 3px;
+    word-wrap: break-word;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background:#FBFCFF;
+}
+
+
+/*Fixed Nav*/
+body
+{
+    background-color: black;
+}
+
+.fixedNav 
+{
+    position: fixed;
+    top: 50%;
+    left: 0;
+}
+.donate , .needDonate  , .tour 
+{
+    height: 50px;
+    width: 50px;
+    background-color: white ; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    cursor:pointer;
+}
+
+.donate  .needDonate { 
+    border-bottom: 0px solid lightgray;  
+}
+
+.fixedHover {  
+    cursor: pointer; 
+}
+.sstyle{
+    width: 120px;
+    height: 50px;
+    background-color: #D02323;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-120px);
+    transition: all .2s;
+    color:white;
+}
+.fixedHover:hover .sstyle{
+
+    transform: translateX(0);
+}
+.fixedHover:hover .tot{
+
+    color: white;
+    background-color: #D02323;
+}
+/* -- popup window */ 
+
+.overlay
+{
+    background-color: rgba( 0, 0, 0 , .8);
+    width: 100%;
+    height: 100%;
+}
+
+#donation
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.formBody
+{
+    background-color: white;
+    width: 60%;
+    height: 85vh;
+    box-shadow: 0 0 0 40px; 
+    position: relative;
+}
+
+#close , #nclose 
+{
+    cursor: pointer; 
+    position: absolute;
+    top: 2%;
+    right: -10%;
+    font-size: 25px;
+}
+#close:hover , #nclose:hover  {  color: #D02323;  }
+
+.transitionForm
+{
+    background-color: #F5F5F5 ;
+    height: 19%;
+}
+.backWidth
+{
+    width: 95%;
+    margin: auto;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    color: rgba( 0, 0, 0 , .7);
+}
+.backFont
+{
+    font-size: 25px;
+}
+.transitionForm .paddingCnceling span 
+{
+    background-color: transparent ;
+    font-weight: bold;
+}
+.backWidth:hover
+{
+    color: #D02323;
+    box-shadow: 0 0 0 9px #e6e6e6;
+}
+
+.backWidth:hover span 
+{
+    color: #D02323 ;
+}
+.paddingCnceling
+{
+    padding: 0 !important;
+}
+
+/*    ------------------------------   */
+.formBody .formContent .row input
+{
+    width: 95%;
+    height: 45px;
+    border: none;
+    border-color: #F5F5F5 ;
+    background-color: #F5F5F5;
+}
+.formBody .formContent .row select
+{
+    width: 95%;
+    height: 45px;
+    border: none;
+    background-color: #F5F5F5;
+    color: #1f2633;
+    outline: none;
+    cursor: pointer;
+}
+
+.formBody .formContent .row label 
+{
+    color: #1f2633;
+    text-align: right;
+    font-weight: bold;
+    width: 100%;
+}
+.formContent
+{
+    width: 80%;
+    margin: 50px auto;
+    margin-bottom: 1px;
+}
+#perInfo-m , #nperInfo-m  { display: block; }
+#bloInfo-m  ,  #getIn-m , #nbloInfo-m  ,  #ngetIn-m 
+{
+    display: none;
+}
+#getIn-m textarea , #ngetIn-m textarea 
+
+{
+    width: 95%;
+    height: 150px;
+    border: none;
+    border-color: #F5F5F5 ;
+    background-color: #F5F5F5;
+    
+}
+/* --------  */ 
+.currentbackwidth
+{
+    background-color :white ;
+    color : #D02323;
+}
+.currentspan
+{
+    color : #D02323;    
+}
+
+/*  buttons    */ 
+
+.buttonss {   margin: 50px auto;   }
+
+.buttonss i { font-size: 30px;  cursor: pointer; color: rgba( 0, 0, 0 , .8) ;}
+.buttonss i:hover {  color: #D02323; }
+.buttonss button {  background-color: #D02323 ; color: white; width: 110px; }
+.buttonss button:hover
+{
+    box-shadow: 0 0 0 10px rgba(208,35,35, .6);
+}
+
+/* ------------------ need donation */
+
+#needDonation 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+
+/*        -          -   */
+
+#resultsNeedDonation , #resultsDonation
+{
+    display: none;
+}
+
+.header div 
+{
+    margin: 20px auto;
+    width: 35%;
+    height: 50px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+    color: rgba( 0, 0, 0 , .7);
+    
+}
+.header div i { font-size: 25px; }
+.header div span 
+{ 
+    font-weight: bold; 
+}
+.resultInfo .fullPage p
+{
+    height: 45px;
+    border: none;
+    border-color: #F5F5F5 ;
+    background-color: #F5F5F5;
+    font-weight: bold;
+}
+.saveButton
+{
+    margin: 10px auto;
+}
+.saveButton button
+{
+    background-color: #D02323 ; color: white; width: 90px;
+}
+.saveButton button:hover {   box-shadow: 0 0 0 10px rgba(208,35,35, .6);   }
+
+.formResult
+{
+    background-color: white;
+    width: 60%;
+    height: 85vh;
+    box-shadow: 0 0 0 40px; 
+    position: relative;
+}
+
+/*Media queries: Mobile first small screens*/
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 12px;
+    }
+    #chatbox{
+        top: 38rem;
+        
+        right: 8rem;
+        height:14rem;
+        margin-bottom: 3rem;
+        width: 160%;
+    }
+   #chatbox .header{
+       height:22%;  
+       border:2px green solid;
+       width: 160%;
+   }
+   #chatbox .chatHistory{
+       width: 160%;
+   }
+  
+   #chatbox .sendIcon{
+    margin-left:0.6rem !important ;
+       
+       bottom: 1rem;
+   }
+   .chatMessage #textarea{
+       height:2.8rem;
+      
+       
+       width: 150% !important;
+       width: 9.5rem !important;
+  }
