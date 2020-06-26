@@ -1,7 +1,6 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blood Donation</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -13,31 +12,821 @@
 </head>
 <body>
 
-    <section id="siteTour">
-
-        <div class="overlay">
-        <div class="m-auto w-50 choose position-relative">
-            <i class="fas fa-heartbeat siteIcon" id="heart"></i>  
-            <div class="chooseButton position-absolute">
-                <div class="text-center">
-                    <i class="fas fa-hand-holding-heart fa-5x"></i>
-                    <a href="donate.html"><button class= 'btn rounded-pill'>DONATE</button></a>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-hand-holding-heart fa-5x"></i>
-                    <a href="needDonation.html"><button class="btn rounded-pill">NEED DONATION</button></a>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-hand-holding-heart fa-5x"></i>
-                    <a href="takeTour.html"><button class="btn rounded-pill">TAKE A TOUR</button></a>
-                </div>
-            </div>      
+    <!--   start loading screen -->
+    <div class="loading">
+        <div id="banner" class="w-50 text-center">
+            <div class="m-auto text-center">
+                <i  class="fas fa-heart text-center" id="loadcolor"></i>
+            </div>
+            <div class="text-center m-auto" >
+                <i  class="fas fa-heart text-white" ></i>
+            </div>
         </div>
     </div>
 
+    <!-- start first site page -->
 
-    </section>
+    <section id="siteTour">
 
+        <div class="overlay">
+
+         
+                
+          <div class="container choose ">
+    
+              <div class="row chooseButton align-items-center justify-content-center">
+
+                  <div class="col-12 col-sm-12 col-md-4 p-5 d-flex justify-content-center align-items-center">
+
+                      <div id="animy1" class="w-100 p-3 m-auto text-center wow"><button data-cr-text="Click to fill your information." class= 'btn rounded-pill'>DONATE</button></div>
+
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-4 p-5 d-flex justify-content-center align-items-center">
+
+                      <div id="animy2" class="w-100 p-3 m-auto text-center wow"><button data-cr-text="Click to fill your information." class="btn rounded-pill">NEED DONATION</button></div>
+
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-4 p-5 d-flex justify-content-center align-items-center">
+
+                      <div id="animy3" class="w-100 p-3 m-auto text-center wow"><button data-cr-text="Click to visit our sections." class="btn rounded-pill">TAKE A TOUR</button></div>
+
+                  </div>
+
+              </div> 
+
+          </div>
+
+        </div>
+
+    </section> 
+
+    <!---  Donation section -->
+
+      <section id="donation">
+
+        <div class="overlay  p-5" id="don">
+  
+           
+  
+            <div class="formBody rounded m-auto">
+  
+  
+                <div class="transitionForm rounded d-flex align-items-center">
+  
+                    <div class="row p-3 container m-auto">
+  
+                        <div class="col-md-4 paddingCnceling">
+  
+                           <div class="backWidth backwidth1 d-flex justify-content-center align-items-center rounded currentbackwidth" id="perInfo">
+                                <i class="fas fa-user-friends backFont pl-1"></i>
+                                <span class="currentspan p-3">Personal Info</span>
+                            </div>
+  
+                        </div>
+  
+                        <div class="col-md-4 paddingCnceling">
+  
+                            <div class="backWidth backwidth2 d-flex justify-content-center align-items-center rounded" id="bloInfo">
+                                <i class="fas fa-heart backFont"></i>
+                                <span class=" p-3">Blood Info</span>
+                            </div>
+  
+                         </div>
+  
+                        <div class="col-md-4 paddingCnceling">
+  
+                            <div class="backWidth backwidth3 d-flex justify-content-center align-items-center rounded" id="getIn">
+                                <i class="fas fa-comment-dots backFont"></i>
+                                <span class=" p-3">Get In Touch</span>
+                            </div>
+  
+                        </div>
+  
+  
+                    </div>
+  
+                </div>
+                
+                <i class="fas fa-times fa-x" id="close"></i>     
+  
+                <div class="formContent">
+  
+                  
+  
+                    <div id="perInfo-m" class="check">
+  
+                      <div class="row justify-content-center my-3">
+  
+                        <div class="col-md-2">
+  
+                          <label>Name<span>*</span> </label>
+  
+                        </div>
+  
+                        <div class="col-md-5 paddingCnceling">
+  
+                          <div><input type="text" class=" p-2 rounded" placeholder="First Name"></div>
+  
+                        </div>
+  
+                        <div class="col-md-5 paddingCnceling">
+  
+                          <div><input type="text" class="p-2 rounded w-100" placeholder="Last Name"></div>
+                          
+                        </div>
+  
+                      </div>
+  
+  
+                      <div class="row justify-content-center my-3">
+  
+                        <div class="col-md-2">
+  
+                          <label>Mail<span>*</span> </label>
+  
+                        </div>
+  
+                        <div class="col-md-10 paddingCnceling">
+  
+                          <div><input type="text" class=" p-2 rounded w-100" placeholder="E-mail"></div>
+  
+                        </div>
+  
+        
+  
+                      </div>
+  
+          
+                      <div class="row justify-content-center my-3">
+  
+                        <div class="col-md-2">
+  
+                          <label>Address<span>*</span> </label>
+  
+                        </div>
+  
+                        <div class="col-md-5 paddingCnceling">
+  
+                          <div><input type="text" class=" p-2 rounded" placeholder="City"></div>
+  
+                        </div>
+  
+                        <div class="col-md-5 paddingCnceling">
+  
+                          <div><input type="text" class="p-2 rounded w-100" placeholder="Current active address"></div>
+                          
+                        </div>
+  
+                      </div>
+  
+                      <div class="row justify-content-center my-3">
+  
+                        <div class="col-md-2">
+  
+                          <label>Password<span>*</span> </label>
+  
+                        </div>
+  
+                        <div class="col-md-10 paddingCnceling">
+  
+                          <div><input type="password" class=" p-2 rounded w-100" placeholder="Password"></div>
+  
+                        </div>
+  
+                        <button id="nextButton" class="btn btn-outline-danger p-2 rounded">Next</button>
+  
+                      </div>
+                    
+  
+                    </div>
+  
+  
+  
+                    <div id="bloInfo-m" class="check">
+  
+                      <div class="row justify-content-center my-3">
+  
+                        <div class="col-md-2">
+  
+                          <label>Patient<span>*</span> </label> 
+  
+                        </div>
+  
+                        <div class="col-md-5 paddingCnceling">
+  
+                          <div><input type="text" class=" p-2 rounded" placeholder="Blood Class"></div>
+  
+                        </div>
+  
+                        <div class="col-md-5 paddingCnceling">
+  
+                          <div><input type="text" class="p-2 rounded w-100" placeholder="Last Donation Time"></div>
+                          
+                        </div>
+  
+                      </div>
+  
+                      <div class="row justify-content-center my-3">
+  
+                        <div class="col-md-2">  
+                        </div>
+  
+                        <div class="col-md-5 paddingCnceling">
+  
+                          <div><input type="text" class=" p-2 rounded" placeholder="Age"></div>
+  
+                        </div>
+  
+                        <div class="col-md-5 paddingCnceling">
+  
+                          <div>
+                            <select class="w-100 p-1">
+                              <option selected disabled>Gender</option>
+                              <option>Male</option>
+                              <option>Female</option>
+                              
+                            </select>
+                          </div>
+                          
+                        </div>
+  
+                      </div>
+  
+  
+                      <div class="row justify-content-center my-3">
+  
+                        <div class="col-md-2">
+  
+                          <label>ID<span>*</span> </label>
+  
+                        </div>
+  
+                        <div class="col-md-10 paddingCnceling">
+  
+                          <div><input type="text" class=" p-2 rounded w-100" placeholder="ID Number"></div>
+  
+                        </div>
+  
+        
+  
+                      </div>
+  
+                      
+                      <div class="row justify-content-center my-3">
+  
+                        <div class="col-md-2">
+  
+                          <label>Healthy<span>*</span> </label>
+  
+                        </div>
+  
+                        <div class="col-md-10 paddingCnceling">
+  
+                          <div><input type="text" class=" p-2 rounded w-100" placeholder="Please mention any chronic disorders"></div>
+  
+                        </div>
+                        <button id="fillMessageButton"  class="btn btn-outline-danger p-2 rounded">Fill Message</button>
+        
+  
+                      </div>
+  
+            
+                    </div>
+  
+                    
+  
+                    <div id="getIn-m" class="check">
+  
+  
+                      <div class="row justify-content-center my-3">
+  
+                        <div class="col-md-2">
+  
+                          <label>Message</label>
+  
+                        </div>
+  
+                        <div class="col-md-10 paddingCnceling">
+  
+                          <div><textarea type="text" class=" p-2 rounded w-100" placeholder="Message us if you have any note"></textarea></div>
+  
+                          <button id="submit" class="btn btn-outline-danger p-2 rounded">Request</button>
+                        </div>
+                        
+                      </div>
+                      
+                
+                    </div>
+                </div>
+  
+  
+  
+            </div>
+           
+        </div>
+  
+      </section>
+  
+      <!--  Result donation section     -->
+  
+      <section id="resultsDonation">
+  
+        <div class="overlay p-5">
+  
+            <div class="formResult rounded m-auto">
+              <div class="resultInfo py-3">
+  
+                <div class="header mb-5">
+                    <div class="rounded mb-3 d-flex justify-content-center align-items-center ">
+                        <i class="fas fa-hand-holding-heart mr-3"></i>
+                        <span>Request Information</span>
+                    </div>
+                </div>
+          
+              
+                <div class="fullPage">
+          
+                    <div class="row container my-2">
+          
+                        <div class="col-md-2"></div>
+          
+                        <div class="col-md-3 ">
+          
+                            <div><p class="d-flex justify-content-center align-items-center">Process ID</p></div>
+                        </div>
+          
+                        <div class="col-md-1"></div>
+          
+                        <div class="col-md-5"><p class="d-flex justify-content-center align-items-center">123456</p></div>
+                    </div>
+          
+                    <div class="row container my-2">
+          
+                        <div class="col-md-3"></div>
+          
+                        <div class="col-md-7 ">
+          
+                            <div><p class="d-flex justify-content-center align-items-center">Congratulations, Your request to help is accepted</p></div>
+                        </div>
+          
+                        <div class="col-md-2"></div>
+          
+                    </div>
+          
+                    <div class="row container my-2">
+          
+                        <div class="col-md-2"></div>
+          
+                        <div class="col-md-3 ">
+          
+                            <div><p class="d-flex justify-content-center align-items-center">Hospital location</p></div>
+                        </div>
+          
+                        <div class="col-md-1"></div>
+          
+                        <div class="col-md-5"><p class="d-flex justify-content-center align-items-center">Nasr Hospital located in XYZ street</p></div>
+                    </div>
+          
+                    <div class="row container my-2">
+          
+                        <div class="col-md-2"></div>
+          
+                        <div class="col-md-3 ">
+          
+                            <div><p class="d-flex justify-content-center align-items-center">Confirmed Date</p></div>
+                        </div>
+          
+                        <div class="col-md-1"></div>
+          
+                        <div class="col-md-5"><p class="d-flex justify-content-center align-items-center">Sat, 21 / 7 /2020</p></div>
+                    </div>
+          
+                    <div class="row container my-2">
+          
+                        <div class="col-md-3"></div>
+          
+                        <div class="col-md-7 ">
+          
+                            <div><p class="d-flex justify-content-center align-items-center">We appreciate your HELP, Be safe!</p></div>
+                        </div>
+          
+                        <div class="col-md-2"></div>
+          
+                    </div>
+                  
+                    <div class="saveButton ">
+                
+                        <div class="row">
+          
+                            <div class="col-md-9"></div>
+          
+                            <div class="col-md-2">
+          
+                            <div><button class="btn btn-outline-danger p-1 rounded">Save</button></div>
+          
+                        </div>
+          
+                    </div>
+          
+                </div>
+          
+              </div>
+            </div>
+          
+        </div>
+  
+  
+      </section>
+  
+    <!--- Need Donation section   --->
+  
+      <section id="needDonation">
+  
+        <div class="overlay p-5" id="ndon">
+  
+            
+            
+  
+            <div class="formBody rounded m-auto">
+  
+                    <div class="transitionForm rounded d-flex align-items-center">
+  
+                        <div class="row p-3 container m-auto">
+  
+                            <div class="col-md-4 paddingCnceling">
+  
+                                <div class="backWidth backwidth1 d-flex justify-content-center align-items-center rounded currentbackwidth" id="nperInfo">
+                                    <i class="fas fa-user-friends backFont pl-1"></i>
+                                    <span class="currentspan p-3">Personal Info</span>
+                                </div>
+  
+                            </div>
+  
+                            <div class="col-md-4 paddingCnceling">
+  
+                                <div class="backWidth backwidth2 d-flex justify-content-center align-items-center rounded" id="nbloInfo">
+                                    <i class="fas fa-heart backFont"></i>
+                                    <span class=" p-3">Blood Info</span>
+                                </div>
+  
+                            </div>
+  
+                            <div class="col-md-4 paddingCnceling">
+  
+                                <div class="backWidth backwidth3 d-flex justify-content-center align-items-center rounded" id="ngetIn">
+                                    <i class="fas fa-comment-dots backFont"></i>
+                                    <span class=" p-3">Get In Touch</span>
+                                    
+                                </div>
+  
+                            </div>
+  
+  
+                        </div>
+  
+                    </div>
+  
+  
+                    <i class="fas fa-times fa-x" id="nclose"></i>     
+  
+                    <div class="formContent">
+  
+                    
+  
+                        <div id="nperInfo-m" class="check">
+  
+                        <div class="row justify-content-center my-3">
+  
+                            <div class="col-md-2">
+  
+                            <label>Name<span>*</span> </label>
+  
+                            </div>
+  
+                            <div class="col-md-5 paddingCnceling">
+  
+                            <div><input type="text" class=" p-2 rounded" placeholder="First Name"></div>
+  
+                            </div>
+  
+                            <div class="col-md-5 paddingCnceling">
+  
+                            <div><input type="text" class="p-2 rounded w-100" placeholder="Last Name"></div>
+                            
+                            </div>
+  
+                        </div>
+  
+  
+                        <div class="row justify-content-center my-3">
+  
+                            <div class="col-md-2">
+  
+                            <label>Mail<span>*</span> </label>
+  
+                            </div>
+  
+                            <div class="col-md-10 paddingCnceling">
+  
+                            <div><input type="text" class=" p-2 rounded w-100" placeholder="E-mail"></div>
+  
+                            </div>
+  
+            
+  
+                        </div>
+  
+            
+                        <div class="row justify-content-center my-3">
+  
+                            <div class="col-md-2">
+  
+                            <label>Address<span>*</span> </label>
+  
+                            </div>
+  
+                            <div class="col-md-5 paddingCnceling">
+  
+                            <div><input type="text" class=" p-2 rounded" placeholder="City"></div>
+  
+                            </div>
+  
+                            <div class="col-md-5 paddingCnceling">
+  
+                            <div><input type="text" class="p-2 rounded w-100" placeholder="Current active address"></div>
+                            
+                            </div>
+  
+                        </div>
+  
+                        <div class="row justify-content-center my-3">
+  
+                            <div class="col-md-2">
+  
+                            <label>Password<span>*</span> </label>
+  
+                            </div>
+  
+                            <div class="col-md-10 paddingCnceling">
+  
+                            <div><input type="password" class=" p-2 rounded w-100" placeholder="Password"></div>
+  
+                            </div>
+  
+                            <button id="nextButton" class="btn btn-outline-danger p-2 rounded">Next</button>
+                            
+  
+                        </div>
+                        
+  
+                        </div>
+  
+  
+  
+                        <div id="nbloInfo-m" class="check">
+  
+                        <div class="row justify-content-center my-3">
+  
+                            <div class="col-md-2">
+  
+                            <label>Patient<span>*</span> </label> 
+  
+                            </div>
+  
+                            <div class="col-md-5 paddingCnceling">
+  
+                            <div><input type="text" class=" p-2 rounded" placeholder="Blood Class"></div>
+  
+                            </div>
+  
+                            <div class="col-md-5 paddingCnceling">
+  
+                            <div><input type="text" class="p-2 rounded w-100" placeholder="Amount needed of blood"></div>
+                            
+                            </div>
+                        </div>
+  
+                        <div class="row justify-content-center my-3">
+  
+                            <div class="col-md-2">  
+                            </div>
+  
+                            <div class="col-md-5 paddingCnceling">
+  
+                              <div>
+                                <select class="dod p-1">
+                                  <option selected disabled>Gender</option>
+                                  <option>Male</option>
+                                  <option>Female</option>
+                                  
+                                </select>
+                              </div>
+                            </div>
+  
+                            <div class="col-md-5 paddingCnceling">
+  
+                              <div>
+                                <select class="w-100 p-1">
+                                  <option selected disabled>Case sensitivity</option>
+                                  <option>Sensitive</option>
+                                  <option>Not Sensitive</option>
+                                  
+                                </select>
+                              </div>                            
+                            </div>
+  
+                        </div>
+  
+  
+                        <div class="row justify-content-center my-3">
+  
+                            <div class="col-md-2">
+  
+                            <label>ID<span>*</span> </label>
+  
+                            </div>
+  
+                            <div class="col-md-10 paddingCnceling">
+  
+                            <div><input type="text" class=" p-2 rounded w-100" placeholder="ID Number"></div>
+  
+                            </div>
+  
+            
+  
+                        </div>
+  
+                        
+                        <div class="row justify-content-center my-3">
+  
+                            <div class="col-md-2">
+  
+                            <label>Location<span>*</span> </label>
+  
+                            </div>
+  
+                            <div class="col-md-10 paddingCnceling">
+  
+                            <div><input type="text" class=" p-2 rounded w-100" placeholder="Where are your case? Hospiatl address"></div>
+  
+                            </div>
+  
+                            <button id="fillMessageButton"  class="btn btn-outline-danger p-2 rounded">Fill Message</button>
+  
+  
+                        </div>
+  
+                        </div>
+                        <div id="ngetIn-m" class="check">
+  
+  
+                        <div class="row justify-content-center my-3">
+  
+                            <div class="col-md-2">
+  
+                            <label>Message</label>
+  
+                            </div>
+  
+                            <div class="col-md-10 paddingCnceling">
+  
+                            <div><textarea type="text" class=" p-2 rounded w-100" placeholder="Message us if you have any note"></textarea>
+                              <button id="finalSubmit" class="btn btn-outline-danger p-2 rounded">Search</button>
+                            </div>
+                            
+                            </div>
+  
+                        </div>
+  
+                        </div>
+  
+                    </div>
+  
+                </div>
+   
+            </div>
+  
+        </div>
+  
+      </section>
+   
+    <!--------------------------------------------------->
+  
+      <section id="resultsNeedDonation">
+  
+        <div class="overlay p-5">
+  
+            <div class="formResult rounded m-auto">
+              <div class="resultInfo py-3">
+  
+                <div class="header mb-5">
+                    <div class="rounded mb-3 d-flex justify-content-center align-items-center ">
+                        <i class="fas fa-hand-holding-heart mr-3"></i>
+                        <span>Request Information</span>
+                    </div>
+                </div>
+          
+              
+                <div class="fullPage">
+          
+                    <div class="row container my-2">
+          
+                        <div class="col-md-2"></div>
+          
+                        <div class="col-md-3 ">
+          
+                            <div><p class="d-flex justify-content-center align-items-center">Process ID</p></div>
+                        </div>
+          
+                        <div class="col-md-1"></div>
+          
+                        <div class="col-md-5"><p class="d-flex justify-content-center align-items-center">123456</p></div>
+                    </div>
+          
+                    <div class="row container my-2">
+          
+                        <div class="col-md-3"></div>
+          
+                        <div class="col-md-7 ">
+          
+                            <div><p class="d-flex justify-content-center align-items-center">Congratulations, Your amount is here</p></div>
+                        </div>
+          
+                        <div class="col-md-2"></div>
+          
+                    </div>
+          
+                    <div class="row container my-2">
+          
+                        <div class="col-md-2"></div>
+          
+                        <div class="col-md-3 ">
+          
+                            <div><p class="d-flex justify-content-center align-items-center">Hospital Name</p></div>
+                        </div>
+          
+                        <div class="col-md-1"></div>
+          
+                        <div class="col-md-5"><p class="d-flex justify-content-center align-items-center">Nasr Hospital</p></div>
+                    </div>
+          
+                    <div class="row container my-2">
+          
+                        <div class="col-md-2"></div>
+          
+                        <div class="col-md-3 ">
+          
+                            <div><p class="d-flex justify-content-center align-items-center">Detailed Address</p></div>
+                        </div>
+          
+                        <div class="col-md-1"></div>
+          
+                        <div class="col-md-5"><p class="d-flex justify-content-center align-items-center">XYZ Streest Located in Hrer</p></div>
+                    </div>
+          
+                    <div class="row container my-2">
+          
+                        <div class="col-md-3"></div>
+          
+                        <div class="col-md-7 ">
+          
+                            <div><p class="d-flex justify-content-center align-items-center">GET WELL SOON</p></div>
+                        </div>
+          
+                        <div class="col-md-2"></div>
+          
+                    </div>
+                  
+                    <div class="saveButton ">
+                
+                        <div class="row">
+          
+                            <div class="col-md-9"></div>
+          
+                            <div class="col-md-2">
+          
+                            <div><a href=""> <button class="btn btn-outline-danger p-1 rounded">Save</button></a></div>
+          
+                        </div>
+          
+                    </div>
+          
+                </div>
+          
+              </div>
+            </div>
+          
+        </div>
+  
+  
+      </section>
+  
+     
+  
+      <!-- End Side Nav-->
+      
 
 
     <script src="js/jquery-3.5.1.js"></script>
